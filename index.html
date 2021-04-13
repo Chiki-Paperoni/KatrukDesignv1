@@ -1,31 +1,467 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-			}
-			.full-red {
-				width: 100%;
-				background-color: red;
-				height: 100vh;
-			}
-			.full-green {
-				width: 100%;
-				background-color: green;
-				height: 100vh;
-			}
-		</style>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Katruk Design</title>
 	</head>
 	<body>
-		<div class="full-green"></div>
-		<div class="full-red"></div>
-		<a href="/ru">РУСКА</a>
-		<a href="/en">ГЛІСЬКА</a>
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="index.html" class="header__logo">Katruk Design</a>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li class="header__item">
+								<a class="header__link" href="#why">Почему мы</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#what">Что делаем</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#how">Как делаем</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__contacts">
+						<a class="header__phone" href="tel">+380 50 849-49-70</a>
+						<button class="header__btn" id="header__btn">обсудить</button>
+						<form class="header__popup popup" id="popup" style="display: none">
+							<span class="popup__close"> &#10005;</span>
+							<div class="popup__container" id="popup__container">
+								<div class="popup__text">Обсудить проект</div>
+								<div class="popup__input">
+									<label for="name">Как вас зовут?</label>
+									<input type="text" id="name" placeholder="Имя" required />
+								</div>
+								<div class="popup__input">
+									<label for="phone">Контактный номер</label>
+									<input type="text" id="phone" placeholder="+380" required />
+								</div>
+								<button class="popup__button">отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper" id="wrapper">
+			<main class="main">
+				<section class="digital">
+					<div class="container">
+						<div class="digital__row">
+							<p class="digital__text">
+								Креативные<br /><span class="digital__text-color"
+									>digital-решения</span
+								><br />для малого бизнеса и частных клиентов
+							</p>
+							<img class="digital__pic" alt="" src="./img/main.png" />
+						</div>
+					</div>
+				</section>
+				<section class="why" id="why">
+					<div class="container">
+						<span class="why__title">Почему KATRUK DESIGN?</span>
+						<p class="why__text">
+							Мы создаем не сайт, а стабильный источник Вашего дохода
+						</p>
+						<div class="why__row">
+							<div class="why__item item">
+								<div class="item__row">
+									<div class="item__circle">
+										<img
+											class="item__circle_pic"
+											src="./img/check.png"
+											alt=""
+										/>
+									</div>
+									<span class="item__title">Сроки</span>
+									<p class="item__text">Вовремя и даже раньше</p>
+								</div>
+							</div>
+							<div class="why__item item">
+								<div class="item__row">
+									<div class="item__circle">
+										<img
+											class="item__circle_pic"
+											src="./img/partner.png"
+											alt=""
+										/>
+									</div>
+									<span class="item__title">Партнерство</span>
+									<p class="item__text">Стратегическое и надолго</p>
+								</div>
+							</div>
+							<div class="why__item item">
+								<div class="item__row">
+									<div class="item__circle">
+										<img
+											class="item__circle_pic"
+											src="./img/style.png"
+											alt=""
+										/>
+									</div>
+									<span class="item__title">Стиль</span>
+									<p class="item__text">Фирменный и со вкусом</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="what" id="what">
+					<div class="container">
+						<div class="what__column">
+							<span class="what__caption">Что делаем</span>
+							<span class="what__title">Веб-сайт</span>
+							<div class="what__inner">
+								<div class="what__item item">
+									<div class="item__row">
+										<div class="item__title">
+											<span class="item__caption">Анализ</span>
+											<svg
+												class="item__icon"
+												width="55"
+												height="55"
+												viewBox="0 0 55 55"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.16659 41.25H45.8333C48.3541 41.25 50.3937 39.1875 50.3937 36.6667L50.4166 11.4583C50.4166 8.9375 48.3541 6.875 45.8333 6.875H9.16659C6.64575 6.875 4.58325 8.9375 4.58325 11.4583V36.6667C4.58325 39.1875 6.64575 41.25 9.16659 41.25ZM9.16659 11.4583H45.8333V36.6667H9.16659V11.4583Z"
+													fill="white"
+												/>
+												<path
+													d="M52.7083 43.5417H2.29163V48.1251H52.7083V43.5417Z"
+													fill="white"
+												/>
+												<path
+													d="M32.0147 17.2561C28.8751 14.1165 23.8106 14.1165 20.671 17.2561C17.5314 20.3956 17.5314 25.4602 20.671 28.5998C23.3751 31.304 27.546 31.6706 30.6626 29.6769L35.4522 34.4665L37.8814 32.0373L33.0918 27.2477C35.0856 24.1311 34.7418 19.9602 32.0147 17.2561ZM29.5856 26.1477C27.7981 27.9352 24.8876 27.9352 23.1001 26.1477C21.3126 24.3602 21.3126 21.4498 23.1001 19.6623C24.8876 17.8748 27.7981 17.8748 29.5856 19.6623C31.3731 21.4727 31.3731 24.3602 29.5856 26.1477Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+										<p class="item__text">
+											Изучаем Ваш бизнес и находим<br />
+											оптимальные решения для сайта
+										</p>
+									</div>
+								</div>
+								<div class="what__item item">
+									<div class="item__row">
+										<div class="item__title">
+											<span class="item__caption">Дизайн</span>
+											<svg
+												class="item__icon"
+												width="55"
+												height="55"
+												viewBox="0 0 55 55"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M27.5 50.4166C14.873 50.4166 4.58337 40.127 4.58337 27.4999C4.58337 14.8728 14.873 4.58325 27.5 4.58325C40.1271 4.58325 50.4167 13.8416 50.4167 25.2083C50.4167 32.7937 44.2521 38.9582 36.6667 38.9582H32.6105C31.9688 38.9582 31.4646 39.4624 31.4646 40.1041C31.4646 40.3791 31.5792 40.6312 31.7625 40.8603C32.7021 41.9374 33.2292 43.2895 33.2292 44.6874C33.2292 47.8499 30.6625 50.4166 27.5 50.4166ZM27.5 9.16658C17.3938 9.16658 9.16671 17.3937 9.16671 27.4999C9.16671 37.6062 17.3938 45.8332 27.5 45.8332C28.1417 45.8332 28.6459 45.3291 28.6459 44.6874C28.6459 44.3207 28.4625 44.0457 28.325 43.8853C27.3855 42.8312 26.8813 41.4791 26.8813 40.1041C26.8813 36.9416 29.448 34.3749 32.6105 34.3749H36.6667C41.7313 34.3749 45.8334 30.2728 45.8334 25.2083C45.8334 16.3624 37.6063 9.16658 27.5 9.16658Z"
+													fill="white"
+												/>
+												<path
+													d="M14.8959 29.7915C16.7944 29.7915 18.3334 28.2525 18.3334 26.354C18.3334 24.4555 16.7944 22.9165 14.8959 22.9165C12.9974 22.9165 11.4584 24.4555 11.4584 26.354C11.4584 28.2525 12.9974 29.7915 14.8959 29.7915Z"
+													fill="white"
+												/>
+												<path
+													d="M21.7709 20.625C23.6693 20.625 25.2084 19.086 25.2084 17.1875C25.2084 15.289 23.6693 13.75 21.7709 13.75C19.8724 13.75 18.3334 15.289 18.3334 17.1875C18.3334 19.086 19.8724 20.625 21.7709 20.625Z"
+													fill="white"
+												/>
+												<path
+													d="M33.2292 20.625C35.1277 20.625 36.6668 19.086 36.6668 17.1875C36.6668 15.289 35.1277 13.75 33.2292 13.75C31.3308 13.75 29.7917 15.289 29.7917 17.1875C29.7917 19.086 31.3308 20.625 33.2292 20.625Z"
+													fill="white"
+												/>
+												<path
+													d="M40.1042 29.7915C42.0027 29.7915 43.5417 28.2525 43.5417 26.354C43.5417 24.4555 42.0027 22.9165 40.1042 22.9165C38.2058 22.9165 36.6667 24.4555 36.6667 26.354C36.6667 28.2525 38.2058 29.7915 40.1042 29.7915Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+										<p class="item__text">
+											Создаем уникальный и удобный<br />
+											дизайн для Вашего бренда
+										</p>
+									</div>
+								</div>
+								<div class="what__item item">
+									<div class="item__row">
+										<div class="item__title">
+											<span class="item__caption">Разработка</span>
+											<svg
+												class="item__icon"
+												width="75"
+												height="75"
+												viewBox="0 0 75 75"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g clip-path="url(#clip0)">
+													<path
+														d="M65.3034 38.75L55 49.2917L58.1358 52.5L71.575 38.75L58.1358 25L55 28.2083L65.3034 38.75Z"
+														fill="white"
+													/>
+													<path
+														d="M19.6717 38.7107L29.9751 49.2524L26.8393 52.4607L13.4001 38.7107L26.8393 24.9607L29.9751 28.169L19.6717 38.7107Z"
+														fill="white"
+													/>
+													<line
+														x1="46.9318"
+														y1="23.2129"
+														x2="37.5272"
+														y2="52.7519"
+														stroke="white"
+														stroke-width="4"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													/>
+												</g>
+												<defs>
+													<clipPath id="clip0">
+														<rect width="75" height="75" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+										<p class="item__text">
+											Разрабатываем проект с нуля<br />
+											с четким пониманием задач
+										</p>
+									</div>
+								</div>
+								<div class="what__item item">
+									<div class="item__row">
+										<div class="item__title">
+											<span class="item__caption">Оптимизация</span>
+											<svg
+												class="item__icon"
+												width="50"
+												height="50"
+												viewBox="0 0 50 50"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g clip-path="url(#clip0)">
+													<path
+														d="M45.8334 10.6982L22.0625 34.2836L13.2292 25.5268L16.1667 22.6148L22.0625 28.4595L42.8959 7.8068L45.8334 10.6982ZM41.2292 21.1071C41.5 22.2843 41.6667 23.5235 41.6667 24.7833C41.6667 33.9118 34.2084 41.3055 25 41.3055C15.7917 41.3055 8.33335 33.9118 8.33335 24.7833C8.33335 15.6548 15.7917 8.26116 25 8.26116C28.2917 8.26116 31.3334 9.21118 33.9167 10.8427L36.9167 7.86875C33.5417 5.51435 29.4375 4.13062 25 4.13062C13.5 4.13062 4.16669 13.383 4.16669 24.7833C4.16669 36.1836 13.5 45.436 25 45.436C36.5 45.436 45.8334 36.1836 45.8334 24.7833C45.8334 22.3256 45.375 19.9712 44.5834 17.782L41.2292 21.1071Z"
+														fill="white"
+													/>
+												</g>
+												<defs>
+													<clipPath id="clip1">
+														<rect width="50" height="50" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+										<p class="item__text">
+											Адаптируем сайт для поисковых систем,<br />
+											снижая затраты на привлечение клиентов
+										</p>
+									</div>
+								</div>
+								<div class="what__item item">
+									<div class="item__row">
+										<div class="item__title">
+											<span class="item__caption">Маркетинг</span>
+											<svg
+												class="item__icon"
+												width="55"
+												height="55"
+												viewBox="0 0 55 55"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M10.1197 41.0563C10.1197 42.7949 8.71033 44.2042 6.9718 44.2042C5.23327 44.2042 3.82391 42.7949 3.82391 41.0563C3.82391 39.3178 5.23327 37.9084 6.9718 37.9084C8.71033 37.9084 10.1197 39.3178 10.1197 41.0563Z"
+													stroke="white"
+													stroke-width="3"
+												/>
+												<path
+													d="M26 25.176C26 26.9145 24.5906 28.3239 22.8521 28.3239C21.1136 28.3239 19.7042 26.9145 19.7042 25.176C19.7042 23.4374 21.1136 22.0281 22.8521 22.0281C24.5906 22.0281 26 23.4374 26 25.176Z"
+													stroke="white"
+													stroke-width="3"
+												/>
+												<path
+													d="M51.1761 22.8522C51.1761 24.5908 49.7667 26.0001 48.0282 26.0001C46.2897 26.0001 44.8803 24.5908 44.8803 22.8522C44.8803 21.1137 46.2897 19.7043 48.0282 19.7043C49.7667 19.7043 51.1761 21.1137 51.1761 22.8522Z"
+													stroke="white"
+													stroke-width="3"
+												/>
+												<path
+													d="M37.6197 36.7958C37.6197 38.5344 36.2103 39.9437 34.4718 39.9437C32.7333 39.9437 31.3239 38.5344 31.3239 36.7958C31.3239 35.0573 32.7333 33.6479 34.4718 33.6479C36.2103 33.6479 37.6197 35.0573 37.6197 36.7958Z"
+													stroke="white"
+													stroke-width="3"
+												/>
+												<line
+													x1="9.81025"
+													y1="38.2334"
+													x2="19.5161"
+													y2="27.0011"
+													stroke="white"
+													stroke-width="4"
+												/>
+												<line
+													x1="37.2968"
+													y1="35.1051"
+													x2="46.1938"
+													y2="24.5904"
+													stroke="white"
+													stroke-width="4"
+												/>
+												<line
+													y1="-2"
+													x2="8.83965"
+													y2="-2"
+													transform="matrix(0.703363 0.710831 -0.71083 0.703364 24.5166 28.8467)"
+													stroke="white"
+													stroke-width="4"
+												/>
+												<path
+													d="M34.7794 19.4119L37.0603 14.3891L42.0588 12.1324L37.0603 9.87582L34.7794 4.85303L32.5471 9.87582L27.5 12.1324L32.5471 14.3891L34.7794 19.4119Z"
+													fill="white"
+												/>
+												<path
+													d="M8.49263 27.5L9.70587 22.6471L14.5588 21.4339L9.70587 20.2206L8.49263 15.3677L7.27939 20.2206L2.42645 21.4339L7.27939 22.6471L8.49263 27.5Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+										<p class="item__text">
+											Изучаем продукты конкурентов<br />
+											для создания эффективной рекламы
+										</p>
+									</div>
+								</div>
+								<div class="what__item item">
+									<div class="item__row">
+										<div class="item__title">
+											<span class="item__caption">Поддержка</span>
+											<svg
+												class="item__icon"
+												width="51"
+												height="51"
+												viewBox="0 0 51 51"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M36.125 31.875L39.4187 35.1687C37.3787 38.76 32.3425 41.6287 27.625 42.33V23.375H34V19.125H27.625V16.6175C30.09 15.725 31.875 13.3875 31.875 10.625C31.875 7.11875 29.0063 4.25 25.5 4.25C21.9937 4.25 19.125 7.11875 19.125 10.625C19.125 13.3875 20.91 15.725 23.375 16.6175V19.125H17V23.375H23.375V42.33C18.6575 41.6287 13.6212 38.76 11.5812 35.1687L14.875 31.875L6.375 25.5V31.875C6.375 40.12 16.83 46.75 25.5 46.75C34.17 46.75 44.625 40.12 44.625 31.875V25.5L36.125 31.875ZM25.5 8.5C26.6688 8.5 27.625 9.45625 27.625 10.625C27.625 11.7937 26.6688 12.75 25.5 12.75C24.3312 12.75 23.375 11.7937 23.375 10.625C23.375 9.45625 24.3312 8.5 25.5 8.5Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+										<p class="item__text">
+											Помогаем развивать проект<br />
+											даже после его окончания
+										</p>
+									</div>
+								</div>
+							</div>
+							<span class="what__price">от $300</span>
+						</div>
+					</div>
+				</section>
+				<section class="quote">
+					<div class="container">
+						<div class="quote__row">
+							<div class="quote__column">
+								<p class="quote__text">
+									Находить идеальный баланс между
+									<span class="quote__text-color">дизайном</span> и
+									<span class="quote__text-color">технологиями</span><br />—
+									наша работа
+								</p>
+							</div>
+							<img class="quote__img" alt="" src="./img/hand.png" />
+							<div class="quote__circle"></div>
+						</div>
+					</div>
+				</section>
+				<section class="how" id="how">
+					<div class="container">
+						<span class="how__title">Как делаем</span>
+						<div class="how__item">
+							<div class="how__row">
+								<span class="how__number">01</span>
+								<span class="how__caption">Интервью и Бриф</span>
+							</div>
+							<p class="how__text">
+								На старте важно выявить главные бизнес задачи и проблемы,
+								которые должен решать сайт. Мы даем Вам заполнить бриф, на
+								основе которого создается макет, определяются сроки и стоимость
+								проекта
+							</p>
+						</div>
+						<div class="how__item">
+							<div class="how__row">
+								<span class="how__number">02</span>
+								<span class="how__caption">Прототип и Верстка</span>
+							</div>
+							<p class="how__text">
+								Следующий шаг - совмещение визуальной концепции с передовыми
+								Front- и Back- end технологиями. Наша цель - создать стабильную
+								систему,<br />
+								в которой элементы дополняют друг друга
+							</p>
+						</div>
+						<div class="how__item">
+							<div class="how__row">
+								<span class="how__number">03</span>
+								<span class="how__caption">Запуск и Развитие</span>
+							</div>
+							<p class="how__text">
+								На последнем этапе проводится проверка работоспособности и
+								удобства сайта. Для продвижения используются рекламные кабинеты
+								Facebook<br />
+								и Google с учетом спроса в интернете на ваш продукт или услугу
+							</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__top top">
+						<span class="top__title">Готовы обсудить проект?</span>
+						<form class="top__form form" action="#">
+							<p class="form__name">
+								<label for="first_name">Как вас зовут?</label>
+								<input
+									type="text"
+									id="first_name"
+									name="First_name"
+									placeholder="Имя"
+								/>
+							</p>
+							<p class="form__phone">
+								<label for="phone_number">Контактный номер</label>
+								<input
+									type="tel"
+									id="phone_number"
+									name="Phone_number"
+									placeholder="+380"
+								/>
+							</p>
+							<p class="form__project">
+								<label for="project">Расскажите о вашем проекте</label>
+								<textarea
+									id="project"
+									name="Details"
+									placeholder="Нужен сайт для парка-атракционов. Красочный, яркий и чтобы отличался от сайтов конкурентов"
+								>
+								</textarea>
+							</p>
+							<button class="form__button">отправить</button>
+						</form>
+					</div>
+					<div class="footer__bot bot"></div>
+				</div>
+			</footer>
+		</div>
+		<script src="./source/js/popup.js"></script>
 	</body>
 </html>
