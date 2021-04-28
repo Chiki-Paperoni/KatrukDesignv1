@@ -1,0 +1,78 @@
+.logo {
+	&__sign {
+		fill: #181c81;
+		&:hover {
+			fill: #6581be;
+		}
+		&:active {
+			fill: #181c81;
+		}
+	}
+}
+
+.button {
+	font-family: "montserrat";
+	background-color: #454ada;
+	color: #fff;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 140%;
+	padding: 17.5px 32px;
+	text-transform: uppercase;
+	border-radius: 87px;
+	&:hover {
+		background-color: #6581be;
+	}
+	&:active {
+		background-color: #000356;
+	}
+}
+
+.lang {
+	&-ru {
+		color: #000356;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 140%;
+		&:after {
+			content: "\002F";
+		}
+		&:hover {
+			color: #454ada;
+		}
+		&:hover:after {
+			color: #000356;
+		}
+	}
+	&-uk {
+		color: #000356;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 140%;
+		&:hover {
+			color: #454ada;
+		}
+	}
+}
+
+.conditions {
+	display: flex;
+	color: #5a5a5a;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 140%;
+	&__year {
+		margin: 0 12px 0 0;
+	}
+	&__agreement {
+		&:hover {
+			color: #454ada;
+		}
+		&:active {
+			color: #000356;
+		}
+		&:visited {
+			color: #5a5a5a;
+		}
+	}
+}
