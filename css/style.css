@@ -1860,6 +1860,7 @@ body {
     width: 275px;
   }
   .what {
+    padding: 15px 0 0 0;
     overflow: hidden;
   }
   .what .item__wrapper:last-of-type {
@@ -1867,6 +1868,9 @@ body {
   }
   .what__title {
     font-size: 18px;
+  }
+  .what__title {
+    margin: 0 0 20px 0;
   }
   .what .item {
     width: 280px;
