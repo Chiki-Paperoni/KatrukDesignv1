@@ -726,6 +726,27 @@ footer {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
+  .warning .popup__warning {
+    display: none !important;
+  }
+  .popup__warning {
+    display: none !important;
+  }
+  .warning .popup__error {
+    display: none !important;
+  }
+  .success__text {
+    width: 258px;
+    font-size: 16px;
+  }
+  .success .button {
+    margin-top: 18px;
+    font-size: 18px;
+    padding: 10.5px 22px;
+  }
+  .success__message {
+    padding: 50px 40px;
+  }
 }
 
 html {
