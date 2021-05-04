@@ -1005,6 +1005,7 @@ body {
 		}
 	}
 	.what {
+		padding: 80px 0 0 0;
 		&__row {
 			justify-content: space-between !important;
 			flex-direction: column;
@@ -1180,6 +1181,9 @@ body {
 	}
 
 	.what {
+		.item__wrapper:last-of-type {
+			margin-bottom: 0px;
+		}
 		overflow: hidden;
 		&__title {
 			font-size: 18px;

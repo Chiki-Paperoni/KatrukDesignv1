@@ -1670,6 +1670,9 @@ body {
   .solutions__row {
     margin-top: 100px;
   }
+  .what {
+    padding: 80px 0 0 0;
+  }
   .what__row {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
@@ -1858,6 +1861,9 @@ body {
   }
   .what {
     overflow: hidden;
+  }
+  .what .item__wrapper:last-of-type {
+    margin-bottom: 0px;
   }
   .what__title {
     font-size: 18px;
