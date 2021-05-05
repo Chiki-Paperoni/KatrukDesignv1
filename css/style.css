@@ -1291,6 +1291,10 @@ body {
   line-height: 140%;
 }
 
+.footer .top .form .popup__warning {
+  margin-top: 16px;
+}
+
 .footer .top .form .button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -2049,7 +2053,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) and (min-height: 700px) {
+@media screen and (max-width: 576px) and (min-height: 568px) {
   .solutions {
     background-size: 100%;
   }

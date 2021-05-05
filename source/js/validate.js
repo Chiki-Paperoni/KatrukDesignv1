@@ -76,6 +76,7 @@ phone.addEventListener("input", (e) => {
 	}
 });
 if (mainForm) {
+	const warn = document.getElementById("mainform__warn");
 	const phone = mainForm.phone;
 	const name = mainForm.name;
 	const details = mainForm.details;
@@ -102,7 +103,7 @@ if (mainForm) {
 			name.classList.remove("warning");
 			details.classList.remove("warning");
 			success.style.display = "flex";
-			//SEND DATA TO TELEGRAM BOT HERE
+			warn.style.display = "none";
 			let data = {
 				name: name.value,
 				phone: phone.value,
@@ -118,6 +119,7 @@ if (mainForm) {
 			mainForm.name.value = "";
 			mainForm.details.value = "";
 		} else {
+			warn.style.display = "block";
 			if (!name.value) {
 				name.classList.add("warning");
 			} else name.classList.remove("warning");
