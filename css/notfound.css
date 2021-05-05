@@ -191,6 +191,7 @@ h6 {
 }
 
 .mobile__popup .mobile__logo {
+  fill: #181c81;
   margin: 54px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,7 +226,7 @@ h6 {
 }
 
 .mobile__popup .mobile__bottom {
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .mobile__popup .mobile__number {
@@ -399,7 +400,7 @@ h6 {
 }
 
 .popup__btn {
-  margin: 0px 0 16px 0;
+  margin: 40px 0 16px 0;
   cursor: pointer;
 }
 
@@ -584,7 +585,7 @@ h6 {
   .popup .button {
     font-size: 28px;
     padding: 14.5px 26px;
-    margin: 0px 0 16px 0;
+    margin: 10px 0 16px 0;
   }
   .popup__container {
     width: 500px;

@@ -226,6 +226,7 @@ footer {
 }
 
 .mobile__popup .mobile__logo {
+  fill: #181c81;
   margin: 54px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,7 +261,7 @@ footer {
 }
 
 .mobile__popup .mobile__bottom {
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .mobile__popup .mobile__number {
@@ -434,7 +435,7 @@ footer {
 }
 
 .popup__btn {
-  margin: 0px 0 16px 0;
+  margin: 40px 0 16px 0;
   cursor: pointer;
 }
 
@@ -619,7 +620,7 @@ footer {
   .popup .button {
     font-size: 28px;
     padding: 14.5px 26px;
-    margin: 0px 0 16px 0;
+    margin: 10px 0 16px 0;
   }
   .popup__container {
     width: 500px;
@@ -838,11 +839,17 @@ body {
 .main__return {
   display: block;
   margin: 25px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main__return:before {
-  content: "\2B9C";
-  padding: 0 20px 0 0;
+.main__return svg {
+  margin-right: 20px;
+  height: 22px;
 }
 
 .footer {
@@ -944,6 +951,10 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 140%;
+  }
+  .main__return svg {
+    margin-right: 14px;
+    height: 17px;
   }
   .footer__row {
     -webkit-box-orient: vertical;

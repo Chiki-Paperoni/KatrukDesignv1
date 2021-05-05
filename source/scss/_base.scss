@@ -41,6 +41,7 @@
 	}
 
 	.mobile__logo {
+		fill: #181c81;
 		margin: 54px 0;
 		display: flex;
 		align-items: center;
@@ -59,7 +60,7 @@
 		}
 	}
 	.mobile__bottom {
-		margin-bottom: 100px;
+		margin-bottom: 140px;
 	}
 	.mobile__number {
 		font-weight: 600;
@@ -177,7 +178,7 @@
 		display: none;
 	}
 	&__btn {
-		margin: 0px 0 16px 0;
+		margin: 40px 0 16px 0;
 		cursor: pointer;
 	}
 	&__close {
@@ -334,7 +335,8 @@
 		.button {
 			font-size: 28px;
 			padding: 14.5px 26px;
-			margin: 0px 0 16px 0;
+
+			margin: 10px 0 16px 0;
 		}
 		&__container {
 			width: 500px;

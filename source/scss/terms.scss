@@ -71,11 +71,17 @@ body {
 	&__return {
 		display: block;
 		margin: 25px 0 0 0;
+		display: flex;
+		align-items: center;
 
-		&:before {
-			content: "\2B9C";
-			padding: 0 20px 0 0;
+		svg {
+			margin-right: 20px;
+			height: 22px;
 		}
+		// &:before {
+		// 	content: "\2B9C";
+		// 	padding: 0 20px 0 0;
+		// }
 	}
 }
 
@@ -166,6 +172,10 @@ body {
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 140%;
+		svg {
+			margin-right: 14px;
+			height: 17px;
+		}
 	}
 	.footer__row {
 		flex-direction: column;

@@ -1171,12 +1171,11 @@ body {
 		height: 19px;
 	}
 	.solutions {
-		max-height: 660px;
 		background-size: 60%;
 		&__text {
 			font-size: 24px;
 			min-width: 275px;
-			width: 275px;
+			width: 300px;
 		}
 	}
 
@@ -1261,6 +1260,9 @@ body {
 		}
 	}
 	.how {
+		.how {
+			padding: 70px 0;
+		}
 		&__title {
 			font-size: 18px;
 			line-height: 24px;
@@ -1287,6 +1289,12 @@ body {
 			font-size: 12px;
 			line-height: 18px;
 			margin: 16px 0 4px 0;
+		}
+		.top {
+			padding: 60px 0 60px 0;
+		}
+		.top__title {
+			margin: 0px 0px 0 0;
 		}
 		.top .form input {
 			padding: 19px 16px;
@@ -1354,5 +1362,10 @@ body {
 			width: 24px;
 			height: 24px;
 		}
+	}
+}
+@media screen and (max-width: 576px) and (min-height: 700px) {
+	.solutions {
+		background-size: 100%;
 	}
 }
