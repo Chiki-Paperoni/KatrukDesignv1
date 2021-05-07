@@ -1083,6 +1083,9 @@ body {
 		.conditions {
 			flex-direction: column;
 			font-size: 10px;
+			&__year {
+				order: 2;
+			}
 		}
 		.button {
 			font-size: 14px;
