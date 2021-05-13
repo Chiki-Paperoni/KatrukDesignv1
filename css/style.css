@@ -1271,7 +1271,7 @@ body {
 .footer .top__pic {
   position: absolute;
   left: -8%;
-  bottom: -59%;
+  bottom: -50%;
 }
 
 .footer .top .form label {
@@ -1327,9 +1327,13 @@ body {
 }
 
 .footer .bot {
+  height: 400px;
   padding: 80px 0 60px 360px;
-  height: 470px;
   position: relative;
+}
+
+.footer .bot .conditions {
+  margin: 20px 0 0 0;
 }
 
 .footer .bot__inner {
@@ -1345,14 +1349,12 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer .bot__col {
-  padding: 42px 0 0 0;
-  margin: 0 65px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1366,7 +1368,7 @@ body {
 }
 
 .footer .bot__logo {
-  margin: 0 0 50px 0;
+  margin: 0 0 42px 0;
 }
 
 .footer .bot__title {
@@ -1374,10 +1376,10 @@ body {
   font-size: 24px;
   line-height: 34px;
   font-weight: 500;
+  margin-bottom: 24px;
 }
 
 .footer .bot__email {
-  margin: 32px 0 10px 0;
   color: #000356;
   font-size: 24px;
   line-height: 34px;
@@ -1402,6 +1404,18 @@ body {
   color: #000356;
 }
 
+.footer .bot__icons {
+  margin-bottom: 40px;
+}
+
+.footer .bot__icons a {
+  margin-right: 20px;
+}
+
+.footer .bot__icons svg {
+  fill: #454ada;
+}
+
 .footer .bot__tg {
   margin: 32px;
   fill: #454ada;
@@ -1416,7 +1430,6 @@ body {
 }
 
 .footer .bot__col_lang {
-  padding: 42px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1606,7 +1619,13 @@ body {
   }
   .footer .bot {
     padding: 80px 0 70px 240px;
-    height: 410px;
+    height: 380px;
+  }
+  .footer .bot__icons a {
+    margin-right: 12px;
+  }
+  .footer .bot__icons svg {
+    width: 32px;
   }
   .footer .bot__terms {
     font-size: 16px;
@@ -1823,8 +1842,8 @@ body {
             flex-direction: column;
   }
   .footer .bot {
-    padding: 50px 0 58px 40px;
-    height: 325px;
+    padding: 50px 10px 58px 10px;
+    height: 285px;
   }
   .footer .bot__lang-ua,
   .footer .bot__lang-ru {
@@ -2023,10 +2042,18 @@ body {
     font-size: 12px;
     font-weight: 600;
     line-height: 18px;
+    margin-bottom: 14px;
   }
   .footer .bot {
-    padding: 50px 0 20px 28px;
-    height: 215px;
+    padding: 30px 5px 0 5px;
+    height: 220px;
+  }
+  .footer .bot__icons {
+    margin-bottom: 14px;
+  }
+  .footer .bot__icons svg {
+    width: 27px;
+    height: 27px;
   }
   .footer .bot__row {
     -webkit-box-align: start;
@@ -2041,14 +2068,13 @@ body {
     display: none;
   }
   .footer .bot__logo {
-    margin: 0 0 22px 0;
+    margin: 0 0 16px 0;
   }
   .footer .logo__sign {
     width: 134px;
   }
   .footer .bot__email {
     font-size: 10px;
-    margin: 7px 0 7px 0;
     line-height: 18px;
   }
   .footer .bot__contacts {
