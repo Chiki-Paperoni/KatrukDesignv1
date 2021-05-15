@@ -312,6 +312,9 @@
 	font-weight: 500;
 	font-size: 22px;
 	line-height: 140%;
+	a:visited {
+		color: #5a5a5a;
+	}
 	&__year {
 		margin: 0 12px 0 0;
 	}
