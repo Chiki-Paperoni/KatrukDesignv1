@@ -511,22 +511,30 @@ body {
 		&__icons {
 			margin-bottom: 40px;
 			a {
+				display: inline-block;
 				margin-right: 20px;
 			}
 			svg {
 				fill: #454ada;
+				transition: 0.2s ease;
+			}
+			a:hover {
+				svg {
+					fill: #000356;
+				}
 			}
 		}
-		&__tg {
-			margin: 32px;
-			fill: #454ada;
-			&:hover {
-				fill: #6581be;
-			}
-			&:active {
-				fill: #000356;
-			}
-		}
+
+		// &__tg {
+		// 	margin: 32px;
+		// 	fill: #454ada;
+		// 	&:hover {
+		// 		fill: #6581be;
+		// 	}
+		// 	&:active {
+		// 		fill: #000356;
+		// 	}
+		// }
 		&__col_lang {
 			// padding: 42px 0 0 0;
 			display: flex;

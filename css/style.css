@@ -1413,23 +1413,17 @@ body {
 }
 
 .footer .bot__icons a {
+  display: inline-block;
   margin-right: 20px;
 }
 
 .footer .bot__icons svg {
   fill: #454ada;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
-.footer .bot__tg {
-  margin: 32px;
-  fill: #454ada;
-}
-
-.footer .bot__tg:hover {
-  fill: #6581be;
-}
-
-.footer .bot__tg:active {
+.footer .bot__icons a:hover svg {
   fill: #000356;
 }
 
